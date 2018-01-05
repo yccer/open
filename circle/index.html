@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery叠加效果自动滚动切换特效 </title>
+<link rel="stylesheet" type="text/css" href="css/funnyNewsTicker.css">
+<script src="js/jQuery.js"></script>
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,600,300&subset=latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<style>
+	body{background:url(img/bgnoise_lg.png); margin:0; padding:0; font-family:'Open Sans',Roboto,Arial,Verdana; font-size:15px; font-weight:400;}
+	.container{width:60%; height:auto; margin:0 auto; margin-top:20px;}
+	.fnt-container-header h1{font-weight:300; font-size:48px; text-align:center;}
+	.fnt-container-header h2{font-size:30px; text-align:center;}
+	
+</style>
+<body>
+
+	<div class="container">
+
+
+        
+        <div style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+            <div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing" id="funnyNewsTicker2">
+                <ul>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">1. 鬼鬼鬼鬼鬼鬼.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">2. 水水水水水</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">3. 松松松</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">4. 288888888888888888888888888</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">5. 菜鸟鸟鸟</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">6.好2222</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <br><br>
+        <div style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+            <div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing" id="funnyNewsTicker3">
+                <ul>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">1. 急急急经济.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">2. 平凡的世界</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">3. 沉默的羔羊 </div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">4.红龙</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://sc.chinaz.com">5. 盖纳</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+		
+    </div> 
+
+<script>
+	$(document).ready(function(){
+			
+		$("#funnyNewsTicker2").funnyNewsTicker({width:"80%",timer:1000,titlecolor:"#FFF",itembgcolor:"#1faf6d",infobgcolor:"#1a935c",buttonstyle:"white",bordercolor:"#1a935c"});	
+		$("#funnyNewsTicker3").funnyNewsTicker({width:"40%",itemheight:250,infobarvisible:false,pagenavi:false,timer:500,itembgcolor:"#af1f63",bordercolor:"#af1f63",titlecolor:"#FFF"});	
+	});	
+</script>
+
+</body>
+</html>
+
